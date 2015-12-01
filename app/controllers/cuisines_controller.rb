@@ -9,4 +9,8 @@ class CuisinesController < ApplicationController
     @recipes = @cuisine.recipes
   end
 
+  def title
+    @title = "Cuisine"
+  end
+
 end

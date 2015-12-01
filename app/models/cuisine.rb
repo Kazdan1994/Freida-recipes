@@ -1,3 +1,3 @@
 class Cuisine < ActiveRecord::Base
-  has_many :recipe
+  has_many :recipes
 end

@@ -4,6 +4,10 @@ class RecipesController < ApplicationController
   before_action :require_editor, only: [:show, :edit]
   before_action :require_admin, only: [:destroy]
 
+  def title
+    @title = "Recipes"
+  end
+
   def show
     @recipe = Recipe.find(params[:id])
   end
